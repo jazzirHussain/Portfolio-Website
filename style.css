@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
 	scroll-behavior: smooth;
 	margin: 0em;
@@ -131,11 +134,57 @@ label{
 }
 .statistics{
 	box-sizing: border-box;
-	padding-left: 2em;
+	padding-left: 5em;
 	width: 100%;
 	float: left;
 }
 .statistics h1{
+	letter-spacing: 1px;
 	font-family: sans-serif;
 	color: rgb(129, 202, 183);
+}
+.outer{
+	border-radius: 1px;
+	height: .5em;
+	width: 70%;
+	background-color: rgb(219, 219, 219);
+	margin-bottom: 1em;
+}
+.inner{
+	border-radius: 1px;
+	height: .5em;
+}
+.stat-name h6{
+	letter-spacing: 1px;
+	font-size: 15px;
+	color: grey;
+	font-family: sans-serif;
+}
+.stat-name{
+	padding-top: 1em;
+}
+.bar{
+	padding-top: .5em;
+}
+.total{
+	width: 50%;
+	float: left;
+}
+.but a{
+	border-radius: 4px;
+	background-color: rgb(129, 202, 183);
+	border: 8px solid;
+	border-color: rgb(129, 202, 183);
+	text-decoration: none;
+	font-family: sans-serif;
+	color: white;
+	font-size: 13px;
+}
+.but{
+	width: 50%;
+	float: left;
+	padding-top: 2em;
+}
+.but a:hover{
+	opacity: 80%;
 }
