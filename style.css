@@ -1,0 +1,141 @@
+body{
+	scroll-behavior: smooth;
+	margin: 0em;
+}
+div{
+	box-sizing: border-box;
+}
+input[type="button"],input[type="submit"]{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;	
+}
+p{
+	margin:0;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+
+.nav-link{
+	padding-right: 50px;
+	text-align: end;
+	box-sizing: border-box;
+	padding-top: 20px;
+	position: relative;
+	width: 100%;
+    float: left;
+}
+.nav-links{
+    position: relative;
+    list-style: none;
+    
+}
+.nav-links li a{
+	cursor: pointer;
+	color: white;
+	font-size: 13px;
+	font-family: sans-serif;
+	text-transform: uppercase;
+    text-decoration: none;
+}
+.navs{
+    text-align: center;
+}
+.nav-link:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+.nav-link ul li a:hover{
+	text-decoration: none;
+	border:solid 8px ;
+	border-color: rgb(129, 202, 183);
+	background-color: rgb(129, 202, 183);
+	margin: -8px;
+	border-radius: 25px;
+}
+
+.nav-link ul li {
+    font-weight: 550;
+	margin-left: 7em;
+    display:inline-block;
+    letter-spacing: 1px;
+    }
+.main{
+	background: url("C:/Users/user/Desktop/web designing/portfolio/banner.jpg") no-repeat center;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    min-height: 42em;
+}
+.name{
+	box-sizing: border-box;
+	padding-top: 15em;
+	padding-left: 15em;
+}
+.name h1{
+	color: rgb(255, 255, 255);
+	font-family: sans-serif;
+	font-size: 50px;
+	cursor: default;
+}
+.head_div{
+	width: 50%;
+	float: left;
+}
+.heading{
+	padding-top: 1em;
+	font-size: 2.3em;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	text-align: start;
+	margin-top: 1em;
+	color: rgb(129, 202, 183);
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+.myself{
+	width: 60%;
+	float: left;
+}
+.myself h6{
+	box-sizing: border-box;
+	line-height: 1.5em;
+	letter-spacing: 1px;
+	font-weight: 100;
+	font-size: .9em;
+	font-family: sans-serif;
+	text-align: left;
+	margin-top: 1.83em;
+	color: grey;
+}
+.photo{
+	margin-bottom: 3em;
+	box-sizing: border-box;
+	padding-left: 12em;
+	width: 35%;
+	float: left;
+}
+.statistics{
+	box-sizing: border-box;
+	padding-left: 2em;
+	width: 100%;
+	float: left;
+}
+.statistics h1{
+	font-family: sans-serif;
+	color: rgb(129, 202, 183);
+}
