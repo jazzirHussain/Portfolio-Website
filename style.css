@@ -171,6 +171,7 @@ label{
 	float: left;
 }
 .but a{
+	cursor: default;
 	box-shadow:0px 5px 5px rgba(0, 0, 0, .2);
 	border-radius: 4px;
 	background-color: rgb(129, 202, 183);
@@ -258,4 +259,24 @@ label{
 }
 .link a:hover{
 	color: rgb(31, 63, 117);
+}
+.popup{
+	visibility: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -65px;
+	margin-left: -350px;
+	width: 50%;
+	height: 5em;
+	background-color: brown;
+}
+.show{
+	visibility: visible;
+	animation: fadein;
+	-webkit-animation: fadein;
+}
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }

@@ -22,6 +22,9 @@
                     <a href="#skills">Skills</a>
                 </li>
                 <li class="navs">
+                    <a href="">Projects</a>
+                </li>
+                <li class="navs">
                     <a href="">Contact Me</a>
                 </li>
             </ul>
@@ -53,6 +56,9 @@
             </div>
             <div class="but">
                 <a onclick="show()">Resume</a>
+            </div>
+            <div class="popup" id="popup">
+                <h1>hello</h1>
             </div>
             <!--/About me section-->
             <!--Skills section-->
@@ -158,6 +164,12 @@
 
         </div>
     </section>
+    <script>
+        function show(){
+            var box = document.getElementById('popup');
+            box.classList.toggle('show')
+        }
+    </script>
 </body>
 
 </html>
