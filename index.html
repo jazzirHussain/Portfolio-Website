@@ -11,6 +11,7 @@
 </head>
 <body>
     <section class="main">
+    <!--Adding Menue Items-->
     <div class="nav">
         <div class="nav-link">
             <ul class="nav-links">
@@ -26,81 +27,137 @@
             </ul>
         </div>
     </div>
+    <!--/Menue items-->
     <div class="name col-lg-4">
         <h1>Hello,<br>I'm Jazzir</h1>
     </div>
 
     </section>
+    <!--About me section-->
     <section class="about" id="about">
-        <div class="photo">
-            <img src="C:/Users/user/Desktop/web designing/portfolio/2.png">
-        </div> 
-        <div class="head_div">
-        <h1 class="heading">About Me</h1>
-        </div>       
-        <div class="myself">
-            <h6>My name is Jazzir Hussain. I am a young, enthusiastic web developer. Currently I am 18 years old.
-                 Yes, by hearing that you would be thinking, "how can he be a software developer at this very young age?". 
-                 But fortunately by the grace of GOD and with the blessings of my parents I built this website from scratch.
-                 Along with this I have completed other two projcts for a Plywood Manufacturing Unit.<br><br>I learned to code by watching tutorials in Youtube and other learning platforms.
-                 At the beginning everything was like a puzzle,I didn't know where to start?, which all languages I need to study? But with the help of my Uncle and some good friends 
-                 I figured it out. Slowly everything started to seem perfect.</h6> 
-            
+        <div class="cont">
+            <div class="photo">
+                <img src="C:/Users/user/Desktop/web designing/portfolio/2.png">
+            </div> 
+            <div class="head_div">
+            <h1 class="heading">About Me</h1>
+            </div>       
+            <div class="myself">
+                <h6>My name is Jazzir Hussain. I am a young, enthusiastic web developer. Currently I am 18 years old.
+                    Yes, by hearing that you would be thinking, "how can he be a software developer at this very young age?". 
+                    But fortunately by the grace of GOD and with the blessings of my parents I built this website from scratch.
+                    Along with this I have completed other two projcts for a Plywood Manufacturing Unit.<br><br>I learned to code by watching tutorials in Youtube and other learning platforms.
+                    At the beginning everything was like a puzzle,I didn't know where to start?, which all languages I need to study? But with the help of my Uncle and some good friends 
+                    I figured it out. Slowly everything started to seem perfect.</h6> 
+                
+            </div>
+            <div class="but">
+                <a onclick="show()">Resume</a>
+            </div>
+            <!--/About me section-->
+            <!--Skills section-->
+            <div class="statistics" id="skills">
+                <h1>Skills:</h1>
+                <!--First skill-->
+                <div class="total">
+                    <div class="stat-name">
+                        <h6>Pyhton:</h6>
+                    </div>
+                    <div class="bar">
+                        <div class="outer">
+                            <div class="inner" style="background-color: tomato; width: 80%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/irst skill-->
+                <!--Second Skill-->
+                <div class="total">
+                    <div class="stat-name">
+                        <h6>HTML:</h6>
+                    </div>
+                    <div class="bar">
+                        <div class="outer">
+                            <div class="inner"  style="background-color: rgb(71, 255, 129); width: 95%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Second Skill-->
+                <!--Third Skill-->
+                <div class="total">
+                    <div class="stat-name">
+                        <h6>CSS:</h6>
+                    </div>
+                    <div class="bar">
+                        <div class="outer">
+                            <div class="inner"  style="background-color: rgb(255, 71, 71); width: 90%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Third Skill-->
+                <!--Forth Skill-->
+                <div class="total">
+                    <div class="stat-name">
+                        <h6>Java:</h6>
+                    </div>
+                    <div class="bar">
+                        <div class="outer">
+                            <div class="inner"  style="background-color: rgb(255, 160, 71); width: 50%;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/Forth skill-->
+            </div>
+            <!--/Skills section-->
+            <!--Resume box-->
         </div>
-        <div class="but">
-            <a href="">Resume</a>
+    </section>
+    <!--Project section-->
+    <section>
+        <div class="head_div2">
+            <h1 class="heading">My Projects</h1>
         </div>
-        <div class="statistics" id="skills">
-            <h1>Skills:</h1>
-            <div class="total">
-                <div class="stat-name">
-                    <h6>Pyhton:</h6>
+        <div class="project">
+            <!--Card describing about previous projects-->
+            <!--First card-->
+            <div class="card">
+                <div class="content-tittle">
+                    <h1>Billing Software</h1>
                 </div>
-                <div class="bar">
-                    <div class="outer">
-                        <div class="inner" style="background-color: tomato; width: 80%;">
-
-                        </div>
-                    </div>
+                <div class="desc">
+                    <p>This project was done using the Python library tkinter.
+                        This is my first project and also a basic one without any
+                        great UI. 
+                    </p>
                 </div>
-            </div>
-            <div class="total">
-                <div class="stat-name">
-                    <h6>HTML:</h6>
-                </div>
-                <div class="bar">
-                    <div class="outer">
-                        <div class="inner"  style="background-color: rgb(71, 255, 129); width: 95%;">
-
-                        </div>
-                    </div>
+                <div class="link">
+                    <a href="#">github link</a>
                 </div>
             </div>
-            <div class="total">
-                <div class="stat-name">
-                    <h6>CSS:</h6>
+            <!--Second card-->
+            <div class="card">
+                <div class="content-tittle">
+                    <h1>Static Website</h1>
                 </div>
-                <div class="bar">
-                    <div class="outer">
-                        <div class="inner"  style="background-color: rgb(255, 71, 71); width: 90%;">
-
-                        </div>
-                    </div>
+                <div class="desc">
+                    <p>This is my second project. I built it from scratch,but 
+                        not hosted in any domain. It doesnt have any backend features.  
+                    </p>
                 </div>
-            </div>
-            <div class="total">
-                <div class="stat-name">
-                    <h6>Java:</h6>
-                </div>
-                <div class="bar">
-                    <div class="outer">
-                        <div class="inner"  style="background-color: rgb(255, 160, 71); width: 50%;">
-
-                        </div>
-                    </div>
+                <div class="link">
+                    <a href="#">github link</a>
                 </div>
             </div>
+
         </div>
     </section>
 </body>
+
 </html>
