@@ -54,6 +54,10 @@
             <div class="but">
                 <a onclick="show()">Resume</a>
             </div>
+            <!--Pop up div of resume-->
+            <div class="popup" id="popup">
+                <h1>hello</h1>
+            </div>
             <!--/About me section-->
             <!--Skills section-->
             <div class="statistics" id="skills">
@@ -71,7 +75,7 @@
                         </div>
                     </div>
                 </div>
-                <!--/irst skill-->
+                <!--/First skill-->
                 <!--Second Skill-->
                 <div class="total">
                     <div class="stat-name">
@@ -158,6 +162,13 @@
 
         </div>
     </section>
+    <script>
+        function show(){
+            var box = document.getElementById('popup');
+            box.classList.toggle('show');
+        }
+        
+    </script>
 </body>
 
 </html>
