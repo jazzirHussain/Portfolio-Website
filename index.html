@@ -11,9 +11,30 @@
     <link href="bootstrap.css">
     <title>Jazzir Hussain</title>
 </head>
-<body>
+<body class="" id="body">
     <section class="main">
     <!--Adding Menue Items-->
+    <div class="hamburger">
+        <a><i onclick="nav()" class="fa fa-bars"></i></a>
+        <div class="nav-hamburger" id="ham-nav">
+            <div class="nav-link-small">
+                <ul class="nav-links">
+                    <li class="navs"> 
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="navs">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="navs">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="navs">
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="nav">
         <div class="nav-link">
             <ul class="nav-links">
@@ -215,6 +236,12 @@
                 <a href="#" class="insta"><span class="fa fa-instagram mr-1"></span>Instagram</a>
                 <a href="#" class="linkedin"><span class="fa fa-linkedin mr-1"></span>LinkedIn</a>
             </div>
+            <div class="social-small">
+                <a href="#" class="facebook"><i class="fa fa-facebook mr-1"></i></a>
+                <a href="#" class="google"><i class="fa fa-google mr-1"></i></a>
+                <a href="#" class="insta"><i class="fa fa-instagram mr-1"></i></a>
+                <a href="#" class="linkedin"><i class="fa fa-linkedin mr-1"></i></a>
+            </div>
             <div class="copyright">
                 <p>© 2020 | JAZZIR HUSSAIN</p>
             </div>
@@ -223,7 +250,14 @@
     <script>
         function show(){
             var box = document.getElementById('popup');
-            box.classList.toggle('show')
+            box.classList.toggle('show');
+        }
+        function nav(){
+            var some = document.getElementById('ham-nav');
+            var bod = document.getElementById('body');
+            some.classList.toggle('show');
+            bod.classList.toggle('no-scroll');
+
         }
     </script>
 </body>
