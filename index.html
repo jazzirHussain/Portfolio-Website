@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font awesome CSS-->
+    <link href="font-awesome.css" rel="stylesheet">
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--Bootstrap-->
+    <link href="bootstrap.css">
+    <title>Jazzir Hussain</title>
+</head>
+<body class="blur" id="body">
+    <section class="main">
+    <!--Adding Menue Items-->
+    <div class="hamburger">
+        <a><i onclick="nav()" class="fa fa-bars"></i></a>
+        <div class="nav-hamburger show" id="ham-nav">
+            <div class="nav-link-small">
+                <ul class="nav-links">
+                    <li class="navs"> 
+                        <a onclick="nav()" href="#about">About Me</a>
+                    </li>
+                    <li class="navs">
+                        <a onclick="nav()"  href="#skills">Skills</a>
+                    </li>
+                    <li class="navs">
+                        <a onclick="nav()"  href="#projects">Projects</a>
+                    </li>
+                    <li class="navs">
+                        <a onclick="nav()"  href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav-link">
+            <ul class="nav-links">
+                <li class="navs">
+                    <a href="#about">About Me</a>
+                </li>
+                <li class="navs">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class="navs">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="navs">
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/Menue items-->
+    <div class="name col-lg-4">
+        <h1>Hello,<br>I'm Jazzir</h1>
+    </div>
+
+    </section>
+    <!--About me section-->
+    <section class="about" id="about">
+        <div class="cont">
+            <div class="photo">
+                <img src="2.png">
+            </div> 
+            <div class="head_div">
+            <h1 class="heading">About Me</h1>
+            </div>       
+            <div class="myself">
+                <h6>I am Jazzir Hussain Hamsa.I am currently pursuing a Bachelors degree in <span class="key">Artificial Intelligence.</span>
+                I am looking forward to work on an inter-disciplinary project combining perks of both Artificial Intelligence and Web Development. My lifelong 
+                dream is to start my own development firm and take it to the next level. The world is changing rapidly, and I am not cent percent sure that
+                I will be able to accomplish this dream. However, I know that I can provide a fresh take and an extraordinary appraoch to every project.
+                <br>
+                I am always open to challenges and constructive feedbacks. I believe that a person should work on developing their professional skills
+                and learning new things all the time. I want to become a team player and dedicate all my skills and talents to develop unique ideas into reality.</h6> 
+                
+            </div>
+            <div class="but">
+                <a onclick="show()">Resume</a>
+            </div>
+ 
+            <!--/About me section-->
+            <!--Skills section-->
+            <div class="statistics" id="skills">
+                <div class="head_div2">
+                <h1 class="heading">Skills</h1>
+            </div>
+                <div class="myself2">
+                    <h6>My area of expertise is Backend development. I can make interactive web apps uisng <span class="key">Django</span>,<span class="key">Python</span>,
+                        <span class="key">PostgreSQL</span>. Also I have experience in front end development too. In depth knowledge in <span class="key">HTML</span>,<span class="key">CSS</span>
+                    and <span class="key">JavaScript</span> helps me to develop creative webpages.<br><br>Apart from Web Development, I have extensive knowledge in <span class="key">Python</span> and
+                some of its <span class="key">core libraries</span>. Above all, I am improving my skills into other fields like Android Development, AI, etc.</h6>
+            </div>
+            <div class="skill-img">
+                <img src="skill3.jpg">
+            </div>
+            </div>
+            <!--/Skills section-->
+            <!--Resume box-->
+        </div>
+    </section>
+    <!--Project section-->
+    <section>
+        <div class="head_div2"  id="projects">
+            <h1 class="heading">My Projects</h1>
+        </div>
+        <div class="project">
+    
+            <!--Card describing about previous projects-->
+            <!--First card-->
+                <div class="card col-sm-12">
+                    <div class="content-tittle">
+                        <h1>Billing Software</h1>
+                    </div>
+                    <div class="desc">
+                        <p>This project was done using the Python library tkinter.
+                            This is my first project and also a basic one without any
+                            great UI. 
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/jazzirHussain" target="blank">Github link</a>
+                    </div>
+                </div>
+                <!--/First Card-->
+                <!--Second card-->
+                <div class="card">
+                    <div class="content-tittle">
+                        <h1>Static Website</h1>
+                    </div>
+                    <div class="desc">
+                        <p>Made a creative, elegant
+                            static webpage for a company.
+                            Built from scratch, studied a lot 
+                            along the journey 
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/jazzirHussain" target="blank">Github link</a>
+                    </div>
+                </div>
+                <!--/Second Card-->
+                <!--Third card-->
+                <div class="card col-sm-12">
+                    <div class="content-tittle">
+                        <h1>E-Commerce Website</h1>
+                    </div>
+                    <div class="desc">
+                        <p>This is my first web application
+                            with payment gateway, social 
+                            accounts and many more features.
+                            This was built using Django.
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/jazzirHussain" target="blank">Github link</a>
+                    </div>
+                </div>
+                <!--/Third Card-->
+        </div>
+    </section>
+    <!--Contact section-->
+    <section>
+        <div class="head_div2" id="contact">
+            <h1 class="heading">Contact Me</h1>
+        </div>
+        <!--Complaint box-->
+        <div class="call-back">
+            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyayMk-MsupfNwsvW1BJVHL5oZQoYKwYzek2TRWsJ-xCYzPVWw/exec" target="blank" >
+                <input type="text" name="fullname" placeholder="Full Name" class="box">
+                <input type="eamil" name="eamil" placeholder="Email" class="box">
+                <input type="text" name="mobile" placeholder="Phone Number" class="box">
+                <textarea class="call-msg" name="message" placeholder="Message"></textarea>
+                <input type="submit" class="submit">
+            </form>
+            
+        </div>
+        <!--/complaint box-->
+        <!--Contact details-->
+        <div class="contact-details">
+            <h5>Address:</h5>
+            <div>
+                <span class="fa fa-home adrs-span"></span>
+                <p>Uppoottil House, Mudickal PO, Perumabvoor,<br>Ernakulam District, Kerala, India. 683547</p></div>
+            <h5>Phone:</h5>
+            <p><span class="fa fa-phone"></span>+91 9496526595</p>
+            <h5>Email:</h5>
+                <p><span class="fa fa-envelope"></span>jasirhussain2002@gmail.com</p>
+            
+        </div>
+        <!--/contact details-->
+    </section>
+    <!--/Contact section-->
+    <section>
+        <div class="footer">
+            <div class="footer-address">
+            <h1>Address</h1>
+            <p>Uppoottil House, Mudickal PO, Perumabvoor<br>+91 9496526595<br>jasirhussain2002@gmail.com</p>
+            </div>
+            <div class="links-full">
+            <div class="footer-links">
+                <h1>Quick Links</h1>
+            </div>
+            <div class="links">
+                <a href="#about">About Me</a><br>
+                <a href="#skills">Skills</a><br>
+                <a href="#projects">Projects</a><br>
+                <a href="#contact">Contact Me</a>
+            </div>
+            </div>
+            <div class="social">
+                <a href="https://github.com/jazzirHussain" class="facebook" target="blank"><span class="fa fa-github mr-1"></span>Github</a>
+                <a href="mailto:jasirhussain2002@gmail.com" class="google" target="blank"><span class="fa fa-google mr-1"></span>Google</a>
+                <a href="https://www.instagram.com/ja_zz_ir?r=nametag" class="insta" target="blank"><span class="fa fa-instagram mr-1"></span>Instagram</a>
+                <a href="https://www.linkedin.com/in/jazzir-hussain-7a6b151ab" class="linkedin" target="blank"><span class="fa fa-linkedin mr-1"></span>LinkedIn</a>
+            </div>
+            <div class="social-small">
+                <a href="https://github.com/jazzirHussain" class="facebook" target="blank"><span class="fa fa-github mr-1"></span></a>
+                <a href="mailto:jasirhussain2002@gmail.com" class="google" target="blank"><span class="fa fa-google mr-1"></span></a>
+                <a href="https://www.instagram.com/ja_zz_ir?r=nametag" class="insta" target="blank"><span class="fa fa-instagram mr-1"></span></a>
+                <a href="https://www.linkedin.com/in/jazzir-hussain-7a6b151ab" class="linkedin" target="blank"><span class="fa fa-linkedin mr-1"></span></a>
+            </div>
+            <div class="copyright">
+                <p>© 2020 | JAZZIR HUSSAIN</p>
+            </div>
+        </div>
+    </section>
+    <script>
+        function nav(){
+            var some = document.getElementById('ham-nav');
+            var bod = document.getElementById('body');
+            some.classList.toggle('show');
+            bod.classList.toggle('no-scroll');
+
+        }
+        
+    </script>
+</body>
+
+</html>
