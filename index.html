@@ -11,25 +11,25 @@
     <link href="bootstrap.css">
     <title>Jazzir Hussain</title>
 </head>
-<body class="" id="body">
+<body class="blur" id="body">
     <section class="main">
     <!--Adding Menue Items-->
     <div class="hamburger">
         <a><i onclick="nav()" class="fa fa-bars"></i></a>
-        <div class="nav-hamburger" id="ham-nav">
+        <div class="nav-hamburger show" id="ham-nav">
             <div class="nav-link-small">
                 <ul class="nav-links">
                     <li class="navs"> 
-                        <a href="#about">About Me</a>
+                        <a onclick="nav()" href="#about">About Me</a>
                     </li>
                     <li class="navs">
-                        <a href="#skills">Skills</a>
+                        <a onclick="nav()"  href="#skills">Skills</a>
                     </li>
                     <li class="navs">
-                        <a href="#projects">Projects</a>
+                        <a onclick="nav()"  href="#projects">Projects</a>
                     </li>
                     <li class="navs">
-                        <a href="#contact">Contact Me</a>
+                        <a onclick="nav()"  href="#contact">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -63,87 +63,40 @@
     <section class="about" id="about">
         <div class="cont">
             <div class="photo">
-                <img src="C:/Users/user/Desktop/web designing/portfolio/2.png">
+                <img src="2.png">
             </div> 
             <div class="head_div">
             <h1 class="heading">About Me</h1>
             </div>       
             <div class="myself">
-                <h6>My name is Jazzir Hussain. I am a young, enthusiastic web developer. Currently I am 18 years old.
-                    Yes, by hearing that you would be thinking, "how can he be a software developer at this very young age?". 
-                    But fortunately by the grace of GOD and with the blessings of my parents I built this website from scratch.
-                    Along with this I have completed other two projcts for a Plywood Manufacturing Unit.<br><br>I learned to code by watching tutorials in Youtube and other learning platforms.
-                    At the beginning everything was like a puzzle,I didn't know where to start?, which all languages I need to study? But with the help of my Uncle and some good friends 
-                    I figured it out. Slowly everything started to seem perfect.</h6> 
+                <h6>I am Jazzir Hussain Hamsa.I am currently pursuing a Bachelors degree in <span class="key">Artificial Intelligence.</span>
+                I am looking forward to work on an inter-disciplinary project combining perks of both Artificial Intelligence and Web Development. My lifelong 
+                dream is to start my own development firm and take it to the next level. The world is changing rapidly, and I am not cent percent sure that
+                I will be able to accomplish this dream. However, I know that I can provide a fresh take and an extraordinary appraoch to every project.
+                <br>
+                I am always open to challenges and constructive feedbacks. I believe that a person should work on developing their professional skills
+                and learning new things all the time. I want to become a team player and dedicate all my skills and talents to develop unique ideas into reality.</h6> 
                 
             </div>
             <div class="but">
                 <a onclick="show()">Resume</a>
             </div>
-            <!--Pop up div of resume-->
-            <div class="popup" id="popup">
-                <h1>hello</h1>
-            </div>
+ 
             <!--/About me section-->
             <!--Skills section-->
             <div class="statistics" id="skills">
-                <h1>Skills:</h1>
-                <!--First skill-->
-                <div class="total">
-                    <div class="stat-name">
-                        <h6>Pyhton:</h6>
-                    </div>
-                    <div class="bar">
-                        <div class="outer">
-                            <div class="inner" style="background-color: tomato; width: 80%;">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/First skill-->
-                <!--Second Skill-->
-                <div class="total">
-                    <div class="stat-name">
-                        <h6>HTML:</h6>
-                    </div>
-                    <div class="bar">
-                        <div class="outer">
-                            <div class="inner"  style="background-color: rgb(71, 255, 129); width: 95%;">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/Second Skill-->
-                <!--Third Skill-->
-                <div class="total">
-                    <div class="stat-name">
-                        <h6>CSS:</h6>
-                    </div>
-                    <div class="bar">
-                        <div class="outer">
-                            <div class="inner"  style="background-color: rgb(255, 71, 71); width: 90%;">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/Third Skill-->
-                <!--Forth Skill-->
-                <div class="total">
-                    <div class="stat-name">
-                        <h6>Java:</h6>
-                    </div>
-                    <div class="bar">
-                        <div class="outer">
-                            <div class="inner"  style="background-color: rgb(255, 160, 71); width: 50%;">
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/Forth skill-->
+                <div class="head_div2">
+                <h1 class="heading">Skills</h1>
+            </div>
+                <div class="myself2">
+                    <h6>My area of expertise is Backend development. I can make interactive web apps uisng <span class="key">Django</span>,<span class="key">Python</span>,
+                        <span class="key">PostgreSQL</span>. Also I have experience in front end development too. In depth knowledge in <span class="key">HTML</span>,<span class="key">CSS</span>
+                    and <span class="key">JavaScript</span> helps me to develop creative webpages.<br><br>Apart from Web Development, I have extensive knowledge in <span class="key">Python</span> and
+                some of its <span class="key">core libraries</span>. Above all, I am improving my skills into other fields like Android Development, AI, etc.</h6>
+            </div>
+            <div class="skill-img">
+                <img src="skill3.jpg">
+            </div>
             </div>
             <!--/Skills section-->
             <!--Resume box-->
@@ -155,38 +108,118 @@
             <h1 class="heading">My Projects</h1>
         </div>
         <div class="project">
+    
             <!--Card describing about previous projects-->
             <!--First card-->
-            <div class="card">
-                <div class="content-tittle">
-                    <h1>Billing Software</h1>
+                <div class="card col-sm-12">
+                    <div class="content-tittle">
+                        <h1>Billing Software</h1>
+                    </div>
+                    <div class="desc">
+                        <p>This project was done using the Python library tkinter.
+                            This is my first project and also a basic one without any
+                            great UI. 
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/jazzirHussain/Billing-Software" target="blank">Github Link</a>
+                    </div>
                 </div>
-                <div class="desc">
-                    <p>This project was done using the Python library tkinter.
-                        This is my first project and also a basic one without any
-                        great UI. 
-                    </p>
+                <!--/First Card-->
+                <!--Second card-->
+                <div class="card">
+                    <div class="content-tittle">
+                        <h1>Static Website</h1>
+                    </div>
+                    <div class="desc">
+                        <p>Made a creative, elegant
+                            static webpage for a company.
+                            Built from scratch, studied a lot 
+                            along the journey 
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://jazzirhussain.github.io/NWP-Site/" target="blank">Link to webpage</a>
+                    </div>
                 </div>
-                <div class="link">
-                    <a href="#">github link</a>
+                <!--/Second Card-->
+                <!--Third card-->
+                <div class="card col-sm-12">
+                    <div class="content-tittle">
+                        <h1>E-Commerce Website</h1>
+                    </div>
+                    <div class="desc">
+                        <p>This is my first web application
+                            with payment gateway, social 
+                            accounts and many more features.
+                            This was built using Django.
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/jazzirHussain" target="blank">Github link</a>
+                    </div>
                 </div>
-            </div>
-            <!--/First Card-->
-            <!--Second card-->
-            <div class="card">
-                <div class="content-tittle">
-                    <h1>Static Website</h1>
+                <!--/Third Card-->
+                <!--Fourth card-->
+                <div class="card col-sm-12">
+                    <div class="content-tittle">
+                        <h1>Calculator</h1>
+                    </div>
+                    <div class="desc">
+                        <p>This was my first basic project.
+                           Its a simple web based calculator built using JS 
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://jazzirhussain.github.io/Calculator/" target="blank">Link to webpage</a>
+                    </div>
                 </div>
-                <div class="desc">
-                    <p>This is my second project. I built it from scratch,but 
-                        not hosted in any domain. It doesnt have any backend features.  
-                    </p>
+                <!--/Fourth Card-->
+                <!--Fifth card-->
+                <div class="card col-sm-12">
+                    <div class="content-tittle">
+                        <h1>Password Manager</h1>
+                    </div>
+                    <div class="desc">
+                        <p>It is a simple password generator and managing app built using python library Tkinter.
+                            Its not linked with any db.
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/jazzirHussain/Password-manager" target="blank">Github link</a>
+                    </div>
                 </div>
-                <div class="link">
-                    <a href="#">github link</a>
+                <!--/Fifth Card-->
+                <!--Sixth card-->
+                <div class="card col-sm-12">
+                    <div class="content-tittle">
+                        <h1>Stone Paper Scissor Game</h1>
+                    </div>
+                    <div class="desc">
+                        <p>It is a simple and basic game built using python library Tkinter.
+                            It was one of my study projects.
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/jazzirHussain/RPS-Game" target="blank">Github link</a>
+                    </div>
                 </div>
-            </div>
-            <!--/Second Card-->
+                <!--/Sixth Card-->
+                <!--Sixth card-->
+                <div class="card col-sm-12">
+                    <div class="content-tittle">
+                        <h1>Portfolio Website</h1>
+                    </div>
+                    <div class="desc">
+                        <p>This was a portfolio website created for the competition conducted by ShapeAI.
+                            Its responsive and has good UI.
+                        </p>
+                    </div>
+                    <div class="link">
+                        <a href="https://github.com/jazzirHussain/RPS-Game" target="blank">Github link</a>
+                    </div>
+                </div>
+                <!--/Sixth Card-->
         </div>
     </section>
     <!--Contact section-->
@@ -196,21 +229,27 @@
         </div>
         <!--Complaint box-->
         <div class="call-back">
-            <input type="text" placeholder="Full Name" class="box">
-            <input type="eamil" placeholder="Email" class="box">
-            <input type="text" placeholder="Phone Number" class="box">
-            <textarea class="call-msg" placeholder="Message"></textarea>
-            <input type="submit" class="submit">
+            <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyayMk-MsupfNwsvW1BJVHL5oZQoYKwYzek2TRWsJ-xCYzPVWw/exec" target="blank" >
+                <input type="text" name="fullname" placeholder="Full Name" class="box">
+                <input type="eamil" name="eamil" placeholder="Email" class="box">
+                <input type="text" name="mobile" placeholder="Phone Number" class="box">
+                <textarea class="call-msg" name="message" placeholder="Message"></textarea>
+                <input type="submit" class="submit">
+            </form>
+            
         </div>
         <!--/complaint box-->
         <!--Contact details-->
         <div class="contact-details">
             <h5>Address:</h5>
-            <p><span class="fa fa-home"></span>Uppoottil House, Mudickal PO, Perumabvoor</p>
+            <div>
+                <span class="fa fa-home adrs-span"></span>
+                <p>Uppoottil House, Mudickal PO, Perumabvoor,<br>Ernakulam District, Kerala, India. 683547</p></div>
             <h5>Phone:</h5>
             <p><span class="fa fa-phone"></span>+91 9496526595</p>
             <h5>Email:</h5>
-            <p><span class="fa fa-envelope"></span>jasirhussain2002@gmail.com</p>
+                <p><span class="fa fa-envelope"></span>jasirhussain2002@gmail.com</p>
+            
         </div>
         <!--/contact details-->
     </section>
@@ -221,6 +260,7 @@
             <h1>Address</h1>
             <p>Uppoottil House, Mudickal PO, Perumabvoor<br>+91 9496526595<br>jasirhussain2002@gmail.com</p>
             </div>
+            <div class="links-full">
             <div class="footer-links">
                 <h1>Quick Links</h1>
             </div>
@@ -230,17 +270,18 @@
                 <a href="#projects">Projects</a><br>
                 <a href="#contact">Contact Me</a>
             </div>
+            </div>
             <div class="social">
-                <a href="#" class="facebook"><span class="fa fa-facebook mr-1"></span>facebook</a>
-                <a href="#" class="google"><span class="fa fa-google mr-1"></span>Google</a>
-                <a href="#" class="insta"><span class="fa fa-instagram mr-1"></span>Instagram</a>
-                <a href="#" class="linkedin"><span class="fa fa-linkedin mr-1"></span>LinkedIn</a>
+                <a href="https://github.com/jazzirHussain" class="facebook" target="blank"><span class="fa fa-github mr-1"></span>Github</a>
+                <a href="mailto:jasirhussain2002@gmail.com" class="google" target="blank"><span class="fa fa-google mr-1"></span>Google</a>
+                <a href="https://www.instagram.com/ja_zz_ir?r=nametag" class="insta" target="blank"><span class="fa fa-instagram mr-1"></span>Instagram</a>
+                <a href="https://www.linkedin.com/in/jazzir-hussain-7a6b151ab" class="linkedin" target="blank"><span class="fa fa-linkedin mr-1"></span>LinkedIn</a>
             </div>
             <div class="social-small">
-                <a href="#" class="facebook"><i class="fa fa-facebook mr-1"></i></a>
-                <a href="#" class="google"><i class="fa fa-google mr-1"></i></a>
-                <a href="#" class="insta"><i class="fa fa-instagram mr-1"></i></a>
-                <a href="#" class="linkedin"><i class="fa fa-linkedin mr-1"></i></a>
+                <a href="https://github.com/jazzirHussain" class="facebook" target="blank"><span class="fa fa-github mr-1"></span></a>
+                <a href="mailto:jasirhussain2002@gmail.com" class="google" target="blank"><span class="fa fa-google mr-1"></span></a>
+                <a href="https://www.instagram.com/ja_zz_ir?r=nametag" class="insta" target="blank"><span class="fa fa-instagram mr-1"></span></a>
+                <a href="https://www.linkedin.com/in/jazzir-hussain-7a6b151ab" class="linkedin" target="blank"><span class="fa fa-linkedin mr-1"></span></a>
             </div>
             <div class="copyright">
                 <p>© 2020 | JAZZIR HUSSAIN</p>
@@ -248,10 +289,6 @@
         </div>
     </section>
     <script>
-        function show(){
-            var box = document.getElementById('popup');
-            box.classList.toggle('show');
-        }
         function nav(){
             var some = document.getElementById('ham-nav');
             var bod = document.getElementById('body');
@@ -259,6 +296,7 @@
             bod.classList.toggle('no-scroll');
 
         }
+        
     </script>
 </body>
 
